@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>3-column preview card component</title>
+  <style>
+    
+    @import url('https://fonts.google.com/specimen/Lexend+Deca');
+    @import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+
+    .flex-container {
+      height: 720px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    h3 {
+      color: hsl(0, 0%, 95%);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    button {
+      margin-top: 5px;
+      padding: 10px;
+      background-color: hsl(0, 0%, 95%);
+      border-radius: 20px;
+      border-color: hsl(0, 0%, 95%);
+    }
+    #r:hover {
+      color: hsl(0, 0%, 95%);
+      background-color: hsl(31, 77%, 52%);
+    }
+    #t:hover {
+      color: hsl(0, 0%, 95%);
+      background-color: hsl(184, 100%, 22%);
+    }
+    #l:hover {
+      color: hsl(0, 0%, 95%);
+      background-color: hsl(179, 100%, 13%);
+    }
+    p {
+      color: hsl(0, 0%, 100%, 0.75);
+    }
+    img, h3, p, button {
+      padding: 8px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+    .items1, .items2, .items3 {
+      padding: 30px;
+    }
+    .items1 {
+      background-color: hsl(31, 77%, 52%);
+    }
+    .items2 {
+      background-color: hsl(184, 100%, 22%);
+    }
+    .items3 {
+      background-color: hsl(179, 100%, 13%);
+    }
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+
+    @media (max-width: 375px) {
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 0px;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="items1">
+      <img src="./images/icon-sedans.svg">
+      <h3>SEDANS</h3>
+      <p>Choose a sedan for its <br> affordability and excellent <br> fuel economy. 
+        Ideal for <br> cruising in the city or on <br> your next road trip.</p>
+      <button id="r" type="button">Learn More</button>
+    </div>
+
+    <div class="items2">
+      <img src="./images/icon-suvs.svg">
+      <h3>SUVS</h3>
+      <p>Take an SUV for its spacious <br> interior, power, and <br>versatility. 
+        Perfect for your <br> next family vacation <br> and off-road adventures.</p>
+          <button id="t" type="button">Learn More</button>
+    </div>
+
+    <div class="items3">
+      <img src="./images/icon-luxury.svg">
+      <h3>LUXURY</h3>
+      <p>Cruise in the best car brands <br> without the bloated prices. 
+        <br>Enjoy the enhanced comfort <br> of a luxury 
+        rental and arrive <br> in style.</p>
+      <button id="l" type="button">Learn More</button>
+    </div>
+  </div><br>
+  <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Sanjay K</a>.
+     </div> -->
+</div>
+</body>
+</html>
